@@ -1,0 +1,71 @@
+/* JUMBOTRON -- Hero Panel
+################################ */
+
+.hero-panel {
+	background-image: url(../img/jumbotron-bg.jpg);
+	background-size: cover;
+	border-bottom: 3px solid tint($textColor, 40%);
+	.img-circle {
+		box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0.1);
+	}
+	h1 {
+		@include headingText;
+	}
+	h3 {
+		@include headingText;
+		span {
+			font: 85% $accentFont;
+			font-style: italic;
+		}
+	}
+	p {
+		color: tint($textColor, 40%);
+		margin-top: 3rem;
+		font-size: 1.5rem;
+	}
+}
+
+/* Content
+################################ */
+
+.front-content,
+.page-content {
+	padding-top: 2rem;
+	padding-bottom: 8rem;
+	h2 {
+		@include headingContent;
+		font-size: 3.6rem;
+		padding-bottom: 2rem;
+	}
+	h4 {
+		@include headingContent;
+		font-size: 2.4rem;
+	}
+	p {
+		margin: 2rem;
+		text-align: center;
+	}
+	.front-columns {
+		margin-top: 5rem;
+		background-color: darken($mainBG, 5%);
+		border-top: medium double lighten($textColor, 33%);
+		padding: 4rem 3rem 3rem;
+		p {
+			margin-top: 3.3rem;
+			margin-bottom: 3.3rem;
+		}
+		button.btn-column {
+			text-transform: capitalize;
+			font-weight: 700;
+			font-size: 1.6rem;
+			width: 100%;
+			background-color: $red;
+			box-shadow: 0 0 5px $navColor;
+			&:hover,
+			&:focus {
+				color: #fff;
+				background-color: darken($red, 10%);
+			}
+		}
+	}
+}

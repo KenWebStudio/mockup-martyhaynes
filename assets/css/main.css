@@ -1,0 +1,282 @@
+body {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #777;
+  background-color: #fff;
+  overflow-x: hidden; }
+
+a {
+  color: #16468e; }
+  a:hover {
+    color: #2067d0;
+    text-decoration: none; }
+
+button, .btn:hover {
+  color: #fff; }
+
+h1 {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+h2, h3, h4, h5, h6 {
+  font-family: "EB Garamond", "Georgia", "Cambria", "Times New Roman", "Times", serif; }
+
+/* Heading Social
+################################ */
+.heading-social {
+  background-color: #0b2c5d; }
+  .heading-social .navbar-text {
+    font-family: "Crimson Text", "Georgia", "Cambria", "Times New Roman", "Times", serif;
+    font-style: italic;
+    color: #fff;
+    margin-left: 0; }
+    .heading-social .navbar-text .fa {
+      font-size: 2.2rem;
+      vertical-align: middle; }
+  .heading-social .navbar-form .form-control {
+    border-radius: 0px;
+    background-color: #777777;
+    border: medium none;
+    padding: 0px 0px 0px 1rem;
+    color: white; }
+  .heading-social .navbar-form .btn-subscribe {
+    border-radius: 0;
+    background-color: #16468e; }
+    .heading-social .navbar-form .btn-subscribe:hover {
+      background-color: #133b78; }
+
+/* Top Main Nav
+################################ */
+.top-navbar .navbar-collapse {
+  text-align: center; }
+.top-navbar .container {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+.top-navbar .navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0; }
+  @media (max-width: 992px) {
+    .top-navbar .navbar-brand {
+      width: 82%; } }
+.top-navbar .navbar-toggle {
+  background-color: #16468e;
+  border-bottom: 2px solid #0c254c;
+  padding: 9px 13px; }
+  @media (max-width: 500px) {
+    .top-navbar .navbar-toggle {
+      margin-top: 0; } }
+.top-navbar ul {
+  text-transform: uppercase;
+  font-weight: 700; }
+  .top-navbar ul li {
+    padding-left: 1rem;
+    padding-right: 1rem; }
+    .top-navbar ul li a {
+      margin-top: 8px;
+      margin-bottom: 8px;
+      color: #999;
+      padding: 8px 8px 4px;
+      border-bottom: 3px solid transparent; }
+    .top-navbar ul li button.navbar-btn {
+      text-transform: inherit;
+      font-weight: inherit;
+      background-color: #3e991f;
+      padding-left: 2rem;
+      padding-right: 2rem; }
+      .top-navbar ul li button.navbar-btn:hover, .top-navbar ul li button.navbar-btn:focus {
+        background-color: #35841b; }
+    .top-navbar ul li.active a, .top-navbar ul li:hover a, .top-navbar ul li:focus a {
+      color: #0b2c5d;
+      background-color: transparent;
+      border-bottom: 3px solid #0b2c5d; }
+.top-navbar #top-nav {
+  float: right; }
+  @media (max-width: 768px) {
+    .top-navbar #top-nav {
+      float: none; } }
+
+/* Footer Section
+################################ */
+.footer-section {
+  background-image: url(../img/footer-bg.jpg);
+  background-size: cover;
+  padding-bottom: 4rem; }
+  .footer-section .footer-columns {
+    margin-top: 6rem; }
+    .footer-section .footer-columns img {
+      margin-top: 1.4rem;
+      padding-bottom: 6rem; }
+    .footer-section .footer-columns h4 {
+      color: #0b2c5d;
+      font-size: 2.4rem;
+      padding-bottom: 8px;
+      margin-bottom: 2.4rem;
+      border-bottom: 2px solid #0b2c5d;
+      display: inline-block; }
+    .footer-section .footer-columns p {
+      margin-bottom: 2.4rem; }
+    .footer-section .footer-columns .navbar-form {
+      padding-left: 0; }
+      .footer-section .footer-columns .navbar-form .form-control {
+        border-radius: 0px;
+        border: medium none;
+        padding: 0px 0px 0px 1rem;
+        color: white; }
+      .footer-section .footer-columns .navbar-form .btn-subscribe {
+        border-radius: 0;
+        background-color: #16468e; }
+        .footer-section .footer-columns .navbar-form .btn-subscribe:hover {
+          background-color: #133b78; }
+    .footer-section .footer-columns .media {
+      margin-top: 0; }
+      .footer-section .footer-columns .media img {
+        margin-top: 0; }
+      .footer-section .footer-columns .media p {
+        margin-top: 0; }
+    .footer-section .footer-columns .fa {
+      padding-right: 8px;
+      color: #999;
+      font-size: 3.2rem; }
+      .footer-section .footer-columns .fa:hover {
+        color: gray; }
+
+.footer-copyright {
+  background-color: #0b2c5d;
+  padding: 2rem 2rem 0;
+  text-align: center; }
+  .footer-copyright a {
+    color: #1d5cba; }
+    .footer-copyright a:hover, .footer-copyright a:focus {
+      color: #2c73de; }
+  .footer-copyright .copyright-columns {
+    margin-bottom: 0; }
+    .footer-copyright .copyright-columns .copyright-inner {
+      padding-bottom: 2rem; }
+    .footer-copyright .copyright-columns .disclaimer {
+      color: #1657b8;
+      border: 1px solid #1657b8;
+      padding: 1rem 2rem; }
+
+/* JUMBOTRON -- Hero Panel
+################################ */
+.hero-panel {
+  background-image: url(../img/jumbotron-bg.jpg);
+  background-size: cover;
+  border-bottom: 3px solid #adadad; }
+  .hero-panel .img-circle {
+    box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0.1); }
+  .hero-panel h1 {
+    color: #fff;
+    font-family: inherit;
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 1;
+    background-color: rgba(123, 13, 13, 0.8);
+    padding: 5px 2.2rem;
+    display: inline-block;
+    margin: 0 0 1rem; }
+  .hero-panel h3 {
+    color: #fff;
+    font-family: inherit;
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 1;
+    background-color: rgba(123, 13, 13, 0.8);
+    padding: 5px 2.2rem;
+    display: inline-block;
+    margin: 0 0 1rem; }
+    .hero-panel h3 span {
+      font: 85% "Crimson Text", "Georgia", "Cambria", "Times New Roman", "Times", serif;
+      font-style: italic; }
+  .hero-panel p {
+    color: #adadad;
+    margin-top: 3rem;
+    font-size: 1.5rem; }
+
+/* Content
+################################ */
+.front-content, .page-content {
+  padding-top: 2rem;
+  padding-bottom: 8rem; }
+  .front-content h2, .page-content h2 {
+    color: #0b2c5d;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3.6rem;
+    padding-bottom: 2rem; }
+  .front-content h4, .page-content h4 {
+    color: #0b2c5d;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.4rem; }
+  .front-content p, .page-content p {
+    margin: 2rem;
+    text-align: center; }
+  .front-content .front-columns, .page-content .front-columns {
+    margin-top: 5rem;
+    background-color: #f2f2f2;
+    border-top: medium double #cbcbcb;
+    padding: 4rem 3rem 3rem; }
+    .front-content .front-columns p, .page-content .front-columns p {
+      margin-top: 3.3rem;
+      margin-bottom: 3.3rem; }
+    .front-content .front-columns button.btn-column, .page-content .front-columns button.btn-column {
+      text-transform: capitalize;
+      font-weight: 700;
+      font-size: 1.6rem;
+      width: 100%;
+      background-color: #c83838;
+      box-shadow: 0 0 5px #999; }
+      .front-content .front-columns button.btn-column:hover, .front-content .front-columns button.btn-column:focus, .page-content .front-columns button.btn-column:hover, .page-content .front-columns button.btn-column:focus {
+        color: #fff;
+        background-color: #a12c2c; }
+
+/* JUMBOTRON -- Flag Panel
+################################ */
+.flag-panel {
+  background-image: url(../img/american-flag.jpg);
+  background-size: cover; }
+
+/* Page Content
+################################ */
+.page-content article {
+  padding-top: 3rem; }
+  .page-content article p {
+    text-align: justify; }
+    .page-content article p img {
+      float: left;
+      margin: 0 3rem 3rem 0; }
+.page-content aside p {
+  text-align: justify;
+  margin: 0; }
+.page-content aside h4 {
+  text-transform: capitalize;
+  font-size: 2.4rem;
+  padding-bottom: 8px;
+  margin-bottom: 2.4rem;
+  border-bottom: 2px solid #999;
+  display: inline-block; }
+.page-content aside form.navbar-form {
+  background-color: #999;
+  padding: 2rem; }
+  .page-content aside form.navbar-form .form-group {
+    width: 100%;
+    padding-bottom: 1rem; }
+    .page-content aside form.navbar-form .form-group .form-control {
+      width: 100%; }
+  .page-content aside form.navbar-form .btn-group {
+    width: 100%;
+    padding: 2px 2px 2px 0;
+    margin-bottom: 2rem; }
+    .page-content aside form.navbar-form .btn-group .btn-activity {
+      text-align: left;
+      background-color: white;
+      color: inherit;
+      width: 100%; }
+  .page-content aside form.navbar-form .btn-submit {
+    width: 100%;
+    text-transform: inherit;
+    font-weight: inherit;
+    background-color: #3e991f;
+    padding-left: 2rem;
+    padding-right: 2rem; }
+    .page-content aside form.navbar-form .btn-submit:hover, .page-content aside form.navbar-form .btn-submit:focus {
+      background-color: #35841b; }

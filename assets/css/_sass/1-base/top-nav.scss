@@ -1,0 +1,114 @@
+/* Heading Social
+################################ */
+.heading-social {
+	background-color: $blue;
+	
+	.navbar-text {
+		font-family: $accentFont;
+		font-style: italic;
+		color: #fff;
+		margin-left: 0;
+		
+		.fa {
+			font-size: 2.2rem;
+			vertical-align: middle;
+		}
+	}
+	
+	.navbar-form {
+		.form-control {
+			border-radius: 0px;
+			background-color: rgb(119, 119, 119);
+			border: medium none;
+			padding: 0px 0px 0px 1rem;
+			color: rgb(255, 255, 255);
+		}
+		
+		.btn-subscribe {
+			border-radius: 0;
+			background-color: $linkColor;
+			&:hover {
+				background-color: darken($linkColor, 5%);
+			}
+		}
+	
+	}
+	
+}
+
+/* Top Main Nav
+################################ */
+.top-navbar {
+	.navbar-collapse {
+		text-align: center;
+	}
+	
+	.container {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	
+	.navbar-brand {
+		padding-top: 0;
+		padding-bottom: 0;
+		
+		@include breakpoint(md) {
+			width: 82%;
+		}
+	}
+	
+	.navbar-toggle {
+		background-color: $linkColor;
+		border-bottom: 2px solid darken($linkColor, 15%);
+		padding: 9px 13px;
+		
+		@include breakpoint(xs) {
+			margin-top: 0;
+		}
+	}
+	
+	ul {
+		text-transform: uppercase;
+		font-weight: 700;
+		
+		li {
+			padding-left: 1rem;
+			padding-right: 1rem;
+			
+			a {
+				margin-top: 8px;
+				margin-bottom: 8px;
+				color: $navColor;
+				padding: 8px 8px 4px;
+				border-bottom: 3px solid transparent;
+			}
+			
+			button.navbar-btn {
+				text-transform: inherit;
+				font-weight: inherit;
+				background-color: $green;
+				padding-left: 2rem;
+				padding-right: 2rem;
+				
+				&:hover, &:focus {
+					background-color: darken($green, 5%);
+				}
+			}
+			
+			&.active a, &:hover a, &:focus a {
+				color: $navColor-active;
+				background-color: transparent;
+				border-bottom: 3px solid $navColor-active;
+			}
+		}
+	}
+	
+	#top-nav {
+		float: right;
+		
+		@include breakpoint(sd) {
+			float: none;
+		}
+	}
+	
+}

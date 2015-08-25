@@ -1,0 +1,27 @@
+body {
+	font-family: $mainFont;
+	color: $textColor;
+	background-color: $mainBG;
+	overflow-x: hidden;
+	
+}
+
+a {
+	color: $linkColor;
+	&:hover {
+		color: lighten($linkColor, 15%);
+		text-decoration: none;
+	}
+}
+
+button, .btn:hover {
+	color: #fff;
+}
+
+h1 {
+	font-family: $mainFont;
+}
+
+h2,h3,h4,h5,h6 {
+	font-family: $mainHead;
+}

@@ -1,0 +1,22 @@
+// FONTS
+$mainFont:			'Roboto','Helvetica Neue',Helvetica,Arial,sans-serif;
+$mainHead:			'EB Garamond', $georgia;
+$accentFont:		'Crimson Text', $georgia;
+
+// COLORS
+$red:						rgb(200,56,56);
+$green:					rgb(62,153,31);
+$blue:					rgb(11,44,93);
+$maroon:				rgba(123,13,13,0.8);
+
+// FONTS -- COLORS
+$headColor:				$blue;
+$textColor:				#777;
+$navColor:				#999;
+$navColor-active:	$headColor;
+$linkColor:				rgb(22,70,142);
+
+// BG COLORS
+$mainBG:			#fff;
+$formBG:			darken($mainBG, 10%);
+

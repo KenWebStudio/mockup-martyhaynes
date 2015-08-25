@@ -1,0 +1,82 @@
+/* JUMBOTRON -- Flag Panel
+################################ */
+.flag-panel {
+	background-image: url(../img/american-flag.jpg);
+	background-size: cover;
+}
+
+/* Page Content
+################################ */
+.page-content {
+	
+	article {
+	padding-top: 3rem;
+	
+		p {
+		text-align: justify;
+		
+			img {
+				float: left;
+				margin: 0 3rem 3rem 0;
+			}
+		}
+	}
+
+	
+	aside {
+		
+		p {
+			text-align: justify;
+			margin: 0;
+		}
+		
+		h4 {
+			text-transform: capitalize;
+			font-size: 2.4rem;
+			padding-bottom: 8px;
+			margin-bottom: 2.4rem;
+			border-bottom: 2px solid $navColor;
+			display: inline-block;
+		}
+		
+		form.navbar-form {
+			background-color: $navColor;
+			padding: 2rem;
+			
+			.form-group {
+				width: 100%;
+				padding-bottom: 1rem;
+				
+				.form-control {
+					width: 100%;
+				}
+			}
+			
+			.btn-group {
+				width: 100%;
+				padding : 2px 2px 2px 0;
+				margin-bottom: 2rem;
+			
+				.btn-activity {
+					text-align: left;
+					background-color: white;
+					color: inherit;
+					width: 100%;
+				}
+			}
+			
+			.btn-submit {
+				width: 100%;
+				text-transform: inherit;
+				font-weight: inherit;
+				background-color: $green;
+				padding-left: 2rem;
+				padding-right: 2rem;
+				
+				&:hover, &:focus {
+					background-color: darken($green, 5%);
+				}
+			}
+		}
+	}
+}

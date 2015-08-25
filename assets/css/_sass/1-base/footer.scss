@@ -1,0 +1,97 @@
+/* Footer Section
+################################ */
+.footer-section {
+	background-image: url(../img/footer-bg.jpg);
+	background-size: cover;
+	padding-bottom: 4rem;
+
+	.footer-columns {
+		margin-top: 6rem;
+		
+		img {
+			margin-top: 1.4rem;
+			padding-bottom: 6rem;
+		}
+		
+		h4 {
+			color: $blue;
+			font-size: 2.4rem;
+			padding-bottom: 8px;
+			margin-bottom: 2.4rem;
+			border-bottom: 2px solid $blue;
+			display: inline-block;
+		}
+		
+		p {
+			margin-bottom: 2.4rem;
+		}
+		
+		.navbar-form {
+			padding-left: 0;
+			
+			.form-control {
+				border-radius: 0px;
+				border: medium none;
+				padding: 0px 0px 0px 1rem;
+				color: rgb(255, 255, 255);
+			}
+
+			.btn-subscribe {
+				border-radius: 0;
+				background-color: $linkColor;
+				&:hover {
+					background-color: darken($linkColor, 5%);
+				}
+			}
+		}
+		
+		.media {
+			margin-top: 0;
+			
+			img {
+				margin-top: 0;
+			}
+			
+			p {
+				margin-top: 0;
+			}
+		}
+		
+		.fa {
+			padding-right: 8px;
+			color: $navColor;
+			font-size: 3.2rem;
+			
+			&:hover {
+				color: darken($navColor,10%);
+			}
+		}
+	}
+}
+
+.footer-copyright {
+	background-color: $blue;
+	padding: 2rem 2rem 0;
+	text-align: center;
+	
+	a {
+		color: lighten($linkColor,10%);
+		&:hover, &:focus {
+			color: lighten($linkColor,20%);
+		}
+	}
+	
+	.copyright-columns {
+		margin-bottom: 0;
+		
+		.copyright-inner {
+			padding-bottom: 2rem;
+		}
+		
+		.disclaimer {
+			color: lighten($blue,20%);
+			border: 1px solid lighten($blue,20%);
+			padding: 1rem 2rem;
+		}
+	}
+}

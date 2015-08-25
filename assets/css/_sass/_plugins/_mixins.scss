@@ -1,0 +1,59 @@
+//Hero Panel Heading
+@mixin headingText {
+	color: #fff;
+	font-family: inherit;
+	font-size: 4.8rem;
+	font-weight: 700;
+	line-height: 1;
+	background-color: $maroon;
+	padding: 5px 2.2rem;
+	display: inline-block;
+	margin: 0 0 1rem;
+}
+//Content Heading
+@mixin headingContent {
+	color: $headColor;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+
+//Media Queries
+@mixin breakpoint($point) {
+    //Large devices (1200px and up)
+    @if $point == lg {
+        @media (min-width:1200px) { @content; }
+    }
+    //Medium devices (1200px and down)
+    @else if $point == ld {
+        @media (max-width:1200px) { @content; }
+    }
+    //Large devices to Medium devices (1200px to 992px)
+    @else if $point == ml {
+        @media (max-width:1200px) and (min-width:992px) { @content; }
+    }
+    //Medium devices (992px and up)
+    @else if $point == mu {
+        @media (min-width: 992px) { @content; }
+    }
+    //Medium devices (992px and down)
+    @else if $point == md {
+        @media (max-width: 992px) { @content; }
+    }
+    //Medium devices to Small devices (992px to 768px)
+    @else if $point == sm {
+        @media (max-width:992px) and (min-width:768px) { @content; }
+    }
+    //Small devices (768px and up)
+    @else if $point == su {
+        @media (min-width: 768px) { @content; }
+    }
+    //Small devices (768px and down)
+    @else if $point == sd {
+        @media (max-width: 768px) { @content; }
+    }
+    //Extra Small devices (500px and down)
+    @else if $point == xs {
+        @media (max-width: 500px) { @content; }
+    }
+}
